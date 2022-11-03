@@ -13,6 +13,11 @@ import {
   ListItem,
   UnorderedList,
   Center,
+  AccordionIcon,
+  AccordionPanel,
+  AccordionItem,
+  Accordion,
+  AccordionButton,
 } from "@chakra-ui/react";
 import { BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
@@ -28,17 +33,40 @@ export default function Home() {
       </Head>
 
       <Container maxW="1400px">
-        <Stack py={4} justify="end" alignItems="center" spacing={6} direction="row">
+        <Stack
+          py={4}
+          justify="end"
+          alignItems="center"
+          spacing={6}
+          direction="row"
+        >
           <IconButton fontSize="3xl" variant="ghost" icon={<BsTwitter />} />
-          <IconButton pt={1} fontSize="3xl" variant="ghost" icon={<FaDiscord />} />
+          <IconButton
+            pt={1}
+            fontSize="3xl"
+            variant="ghost"
+            icon={<FaDiscord />}
+          />
         </Stack>
 
-        <Stack py={6} alignItems="center" justify="space-between" direction="row">
+        <Stack
+          py={6}
+          alignItems="center"
+          justify="space-between"
+          direction="row"
+        >
           <Stack>
-            <Image width="32rem" src="/images/easy_money.svg" alt="Easy money" />
+            <Image
+              width="32rem"
+              src="/images/easy_money.svg"
+              alt="Easy money"
+            />
 
             <Stack pl={12} spacing={8} width="sm">
-              <Text fontSize="xl">LIFE GETS WORSE BEFORE IT GETS BETTER...BUT SOMETIMES IT JUST GETS WORSE.</Text>
+              <Text fontSize="xl">
+                LIFE GETS WORSE BEFORE IT GETS BETTER...BUT SOMETIMES IT JUST
+                GETS WORSE.
+              </Text>
 
               <Text>Be part of the first African movie funded with NFTs</Text>
               <Button width="13rem" rounded="full">
@@ -50,21 +78,36 @@ export default function Home() {
           <Image width="28rem" alt="car image" src="/images/car.png" />
         </Stack>
 
-        <Stack py={8} spacing={6} align="center" textAlign="center" width="100%">
+        <Stack
+          py={8}
+          spacing={6}
+          align="center"
+          textAlign="center"
+          width="100%"
+        >
           <Heading textTransform="uppercase">The mint</Heading>
           <Stack pt={5} spacing={8} width="3xl">
             <Text>
-              Each NFT you mint helps get this movie made. Your contribution also gives you a share of the IP and life time revenue from the
+              Each NFT you mint helps get this movie made. Your contribution
+              also gives you a share of the IP and life time revenue from the
               film.
             </Text>
 
-            <Text>Lets make history by creating the first African film fully funded with NFTs.</Text>
+            <Text>
+              Lets make history by creating the first African film fully funded
+              with NFTs.
+            </Text>
           </Stack>
         </Stack>
 
         <SimpleGrid py={12} spacing={6} columns={3} direction="row">
           <Stack spacing={6}>
-            <Text fontWeight={500} fontSize="20px" alignSelf="center" textTransform="uppercase">
+            <Text
+              fontWeight={500}
+              fontSize="20px"
+              alignSelf="center"
+              textTransform="uppercase"
+            >
               Greed
             </Text>
             <Stack border="1px" borderColor="gray.200" borderRadius="lg">
@@ -78,18 +121,29 @@ export default function Home() {
                 </Text>
                 <UnorderedList spacing={5}>
                   <ListItem> Access to the gated Discord channel</ListItem>
-                  <ListItem>A private link to watch the finished movie</ListItem>
+                  <ListItem>
+                    A private link to watch the finished movie
+                  </ListItem>
                   <ListItem>Your name in the credits of the film</ListItem>
                   <ListItem>IP share of the film (per # of NFT owned)</ListItem>
-                  <ListItem>Revenue share of the film (per # of NFT owned)</ListItem>
-                  <ListItem>A shoutout on Twitter from the Easy Money account</ListItem>
+                  <ListItem>
+                    Revenue share of the film (per # of NFT owned)
+                  </ListItem>
+                  <ListItem>
+                    A shoutout on Twitter from the Easy Money account
+                  </ListItem>
                 </UnorderedList>
               </Stack>
             </Stack>
           </Stack>
 
           <Stack spacing={6}>
-            <Text fontWeight={500} fontSize="20px" alignSelf="center" textTransform="uppercase">
+            <Text
+              fontWeight={500}
+              fontSize="20px"
+              alignSelf="center"
+              textTransform="uppercase"
+            >
               Wrath
             </Text>
             <Stack border="1px" borderColor="gray.200" borderRadius="lg">
@@ -104,17 +158,27 @@ export default function Home() {
                 <UnorderedList spacing={5}>
                   <ListItem>Everything on the GREED tier +</ListItem>
                   <ListItem>Video Q & A with crew</ListItem>
-                  <ListItem>A limited edition Easy Money T-Shirt and Poster</ListItem>
+                  <ListItem>
+                    A limited edition Easy Money T-Shirt and Poster
+                  </ListItem>
                   <ListItem>Associate Producer credits in the film</ListItem>
                   <ListItem>Invite to cast & crew screening in Lagos</ListItem>
-                  <ListItem>Invite to come on set for a day. Watch behind the scenes in real time</ListItem>
+                  <ListItem>
+                    Invite to come on set for a day. Watch behind the scenes in
+                    real time
+                  </ListItem>
                 </UnorderedList>
               </Stack>
             </Stack>
           </Stack>
 
           <Stack spacing={6}>
-            <Text fontWeight={500} fontSize="20px" alignSelf="center" textTransform="uppercase">
+            <Text
+              fontWeight={500}
+              fontSize="20px"
+              alignSelf="center"
+              textTransform="uppercase"
+            >
               Envy
             </Text>
             <Stack border="1px" borderColor="gray.200" borderRadius="lg">
@@ -129,10 +193,15 @@ export default function Home() {
                 <UnorderedList spacing={5}>
                   <ListItem>Everything on the GREED tier +</ListItem>
                   <ListItem>Video Q & A with crew</ListItem>
-                  <ListItem>A limited edition Easy Money T-Shirt and Poster</ListItem>
+                  <ListItem>
+                    A limited edition Easy Money T-Shirt and Poster
+                  </ListItem>
                   <ListItem>Associate Producer credits in the film</ListItem>
                   <ListItem>Invite to cast & crew screening in Lagos</ListItem>
-                  <ListItem>Invite to come on set for a day. Watch behind the scenes in real time</ListItem>
+                  <ListItem>
+                    Invite to come on set for a day. Watch behind the scenes in
+                    real time
+                  </ListItem>
                 </UnorderedList>
               </Stack>
             </Stack>
@@ -142,7 +211,8 @@ export default function Home() {
         <Stack py={8} alignItems="center">
           <Stack spacing={8} width="lg" alignItems="center">
             <Text align="center">
-              Join our discord to stay updated on our progress and also stand a chance to win limited edition prizes.
+              Join our discord to stay updated on our progress and also stand a
+              chance to win limited edition prizes.
             </Text>
             <Button width="13rem" rounded="full">
               JOIN OUR DISCORD
@@ -161,7 +231,10 @@ export default function Home() {
               <Text fontWeight={500} fontSize="21px">
                 Plot
               </Text>
-              <Text fontSize="17px">A desperate man trying to escape the poverty of his life attempts a robbery with an old friend.</Text>
+              <Text fontSize="17px">
+                A desperate man trying to escape the poverty of his life
+                attempts a robbery with an old friend.
+              </Text>
               <Text fontStyle="italic">Everything goes wrong.</Text>
             </Stack>
 
@@ -174,7 +247,10 @@ export default function Home() {
               <Text fontWeight={500} fontSize="21px">
                 Based on a true story
               </Text>
-              <Text fontSize="17px">A film about wealth inequality, urban violence and escalating consequences.</Text>
+              <Text fontSize="17px">
+                A film about wealth inequality, urban violence and escalating
+                consequences.
+              </Text>
             </Stack>
           </Stack>
         </Stack>
@@ -183,7 +259,13 @@ export default function Home() {
           <Image width="50rem" src="/images/snapshot.png" alt="" />
         </Stack>
 
-        <Stack py={16} align="center" bgRepeat="no-repeat" bgPosition="center" bgImage="url(/images/map.png)">
+        <Stack
+          py={16}
+          align="center"
+          bgRepeat="no-repeat"
+          bgPosition="center"
+          bgImage="url(/images/map.png)"
+        >
           <Heading fontSize="5xl" textTransform="uppercase">
             Road map
           </Heading>
@@ -229,94 +311,159 @@ export default function Home() {
 
             <chakra.div>
               <Text fontStyle="italic">Ongoing...</Text>
-              <Heading textTransform="uppercase">IP ownership X Profit share</Heading>
+              <Heading textTransform="uppercase">
+                IP ownership X Profit share
+              </Heading>
             </chakra.div>
           </Stack>
 
           <Container textAlign="center" maxW="container.md">
             <Text>
-              50% pf IP rights and lifetime revenue of the films goes to NFT holders. Profit from the film will be converted to ETH and
+              50% pf IP rights and lifetime revenue of the films goes to NFT
+              holders. Profit from the film will be converted to ETH and
               available to claim by NFT holders.
             </Text>
           </Container>
         </Stack>
 
-        <Stack>
-          <Heading>FAQs</Heading>
-          <Stack>
-            <Stack direction="row">
-              <Image src="" alt="" />
-              <Text>What is Easy Money?</Text>
-            </Stack>
-            <Text>
-              Easy money is the first African film funded completely with NFTs. We using this new wave of technology to build on the
-              momentum of independent filmmaking. Setting an example for filmmakers in the African/Global film space. Holding an Easy Money
-              NFT is holding a piece of history and a chance to be part of the new filmmaking revolution.
-            </Text>
-          </Stack>
+        <Container py={10} maxW="3xl">
+          <Heading pb={2} textAlign="center">
+            FAQs
+          </Heading>
 
-          <Stack>
-            <Stack direction="row">
-              <Image src="" alt="" />
-              <Text>When is the NFT launching?</Text>
-            </Stack>
-            <Text>The NFTs will be available to mint in November 2022. Join the Discord to get updates.</Text>
-          </Stack>
+          <Accordion defaultIndex={[0]} allowMultiple>
+            <AccordionItem border="none">
+              <AccordionButton>
+                <Stack alignItems="center" direction="row">
+                  <AccordionIcon fontSize="4rem" />
+                  <Heading fontWeight={400} fontSize="2rem">
+                    What is Easy Money?
+                  </Heading>
+                </Stack>
+              </AccordionButton>
+              <AccordionPanel>
+                Easy money is the first African film funded completely with
+                NFTs. We using this new wave of technology to build on the
+                momentum of independent filmmaking. Setting an example for
+                filmmakers in the African/Global film space. Holding an Easy
+                Money NFT is holding a piece of history and a chance to be part
+                of the new filmmaking revolution.
+              </AccordionPanel>
+            </AccordionItem>
 
-          <Stack>
-            <Stack direction="row">
-              <Image src="" alt="" />
-              <Text>How much is the mint price?</Text>
-            </Stack>
-            <Text>The NFTs come in three tiers with different utilities and rarities. 0.12 ETH, 1 ETH, and 5 ETH.</Text>
-          </Stack>
+            <AccordionItem border="none">
+              <AccordionButton>
+                <Stack alignItems="center" direction="row">
+                  <AccordionIcon fontSize="4rem" />
+                  <Heading fontWeight={400} fontSize="2rem">
+                    When is the NFT launching?
+                  </Heading>
+                </Stack>
+              </AccordionButton>
+              <AccordionPanel>
+                The NFTs will be available to mint in November 2022. Join the
+                Discord to get updates.
+              </AccordionPanel>
+            </AccordionItem>
 
-          <Stack>
-            <Stack direction="row">
-              <Image src="" alt="" />
-              <Text>How does the IP and Profit sharing work?</Text>
-            </Stack>
-            <Text>
-              The IP and life time profit of the film will be shared 50/50 between the team and NFT holders. As an NFT holder your share is
-              determined by the overall monetrary contribution to the film (in this case, what tier of NFT you own and how many you own).
-              The higher your NFT tier and the more NFTs you own the greater your share.
-            </Text>
-          </Stack>
+            <AccordionItem border="none">
+              <AccordionButton>
+                <Stack alignItems="center" direction="row">
+                  <AccordionIcon fontSize="4rem" />
+                  <Heading fontWeight={400} fontSize="2rem">
+                    How much is the mint price?
+                  </Heading>
+                </Stack>
+              </AccordionButton>
+              <AccordionPanel>
+                The NFTs come in three tiers with different utilities and
+                rarities. 0.12 ETH, 1 ETH, and 5 ETH.
+              </AccordionPanel>
+            </AccordionItem>
 
-          <Stack>
-            <Stack direction="row">
-              <Image src="" alt="" />
-              <Text>How will profit be collected?</Text>
-            </Stack>
-            <Text>
-              After our festival run, all present and future profit will be continuosly converted to ETH and NFT holders will be able to
-              claim from their dashboard based on NFTs they own.
-            </Text>
-          </Stack>
+            <AccordionItem border="none">
+              <AccordionButton>
+                <Stack alignItems="center" direction="row">
+                  <AccordionIcon fontSize="4rem" />
+                  <Heading fontWeight={400} fontSize="2rem">
+                    How does the IP and Profit sharing work?
+                  </Heading>
+                </Stack>
+              </AccordionButton>
+              <AccordionPanel>
+                The IP and life time profit of the film will be shared 50/50
+                between the team and NFT holders. As an NFT holder your share is
+                determined by the overall monetrary contribution to the film (in
+                this case, what tier of NFT you own and how many you own). The
+                higher your NFT tier and the more NFTs you own the greater your
+                share.
+              </AccordionPanel>
+            </AccordionItem>
 
-          <Stack>
-            <Stack direction="row">
-              <Image src="" alt="" />
-              <Text>Who is behind this project?</Text>
-            </Stack>
-            <Text>
-              Easy Money is a team effort made by African filmmakers and Web3 communities. It’s written and directed by Lenny Johnson.
-            </Text>
-          </Stack>
+            <AccordionItem border="none">
+              <AccordionButton>
+                <Stack alignItems="center" direction="row">
+                  <AccordionIcon fontSize="4rem" />
+                  <Heading fontWeight={400} fontSize="2rem">
+                    How will profit be collected?
+                  </Heading>
+                </Stack>
+              </AccordionButton>
+              <AccordionPanel>
+                After our festival run, all present and future profit will be
+                continuosly converted to ETH and NFT holders will be able to
+                claim from their dashboard based on NFTs they own.
+              </AccordionPanel>
+            </AccordionItem>
 
-          <Stack>
-            <Stack direction="row">
-              <Image src="" alt="" />
-              <Text>How can I support this project?</Text>
-            </Stack>
-            <Text>
-              You can mint an Easy Money NFT when we launch. You can also share this project with your friends and on social media. Teach
-              them about NFTs and Web3 and contribute to this new revolution.
-            </Text>
+            <AccordionItem border="none">
+              <AccordionButton>
+                <Stack alignItems="center" direction="row">
+                  <AccordionIcon fontSize="4rem" />
+                  <Heading fontWeight={400} fontSize="2rem">
+                    Who is behind this project?
+                  </Heading>
+                </Stack>
+              </AccordionButton>
+              <AccordionPanel>
+                Easy Money is a team effort made by African filmmakers and Web3
+                communities. It’s written and directed by Lenny Johnson.
+              </AccordionPanel>
+            </AccordionItem>
+
+            <AccordionItem border="none">
+              <AccordionButton>
+                <Stack alignItems="center" direction="row">
+                  <AccordionIcon fontSize="4rem" />
+                  <Heading fontWeight={400} fontSize="2rem">
+                    How can I support this project?
+                  </Heading>
+                </Stack>
+              </AccordionButton>
+              <AccordionPanel>
+                You can mint an Easy Money NFT when we launch. You can also
+                share this project with your friends and on social media. Teach
+                them about NFTs and Web3 and contribute to this new revolution.
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+        </Container>
+
+        <Stack alignItems="center" py={8} spacing={8} as="footer">
+          <Heading fontWeight={400} fontSize="3rem">
+            Connect With US
+          </Heading>
+          <Text fontSize="18px">Keep up with all the Easy Money updates</Text>
+          <Stack py={4} alignSelf="center" spacing={12} direction="row">
+            <IconButton fontSize="5xl" variant="ghost" icon={<BsTwitter />} />
+            <IconButton
+              pt={1}
+              fontSize="5xl"
+              variant="ghost"
+              icon={<FaDiscord />}
+            />
           </Stack>
         </Stack>
-
-        <chakra.footer></chakra.footer>
       </Container>
     </>
   );
