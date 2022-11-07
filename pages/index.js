@@ -12,8 +12,12 @@ import {
   IconButton,
   ListItem,
   UnorderedList,
+  Input,
+  InputGroup,
+  InputRightElement,
   Center,
   AccordionIcon,
+  Wrap,
   AccordionPanel,
   AccordionItem,
   Accordion,
@@ -22,6 +26,7 @@ import {
 import { BsTwitter } from "react-icons/bs";
 import { FaDiscord } from "react-icons/fa";
 import ArrowIcon from "icons/arrow";
+import { CLIENT_STATIC_FILES_RUNTIME_WEBPACK } from "next/dist/shared/lib/constants";
 
 export default function Home() {
   return (
@@ -85,7 +90,14 @@ export default function Home() {
               >
                 Be part of the first African movie funded with NFTs.
               </Text>
-              <Button width="13rem" rounded="full">
+              <Button
+                _active={{ opacity: 0.8 }}
+                _hover={{ opacity: 0.8 }}
+                color="black"
+                bgColor="white"
+                width="13rem"
+                rounded="full"
+              >
                 JOIN OUR DISCORD
               </Button>
             </Stack>
@@ -159,7 +171,7 @@ export default function Home() {
             </Text>
             <Stack border="1px" borderColor="gray.200" borderRadius="lg">
               <Image alt="hero image" src="/images/question_mark.png" />
-              <Text pt={4} fontSize="20px" alignSelf="center">
+              <Text pt={4} fontSize="1.5rem" alignSelf="center">
                 0.12 ETH
               </Text>
               <Stack pb={8} pt={4} px={8}>
@@ -198,7 +210,7 @@ export default function Home() {
             </Text>
             <Stack border="1px" borderColor="gray.200" borderRadius="lg">
               <Image alt="hero image" src="/images/question_mark.png" />
-              <Text pt={4} fontSize="20px" alignSelf="center">
+              <Text pt={4} fontSize="1.5rem" alignSelf="center">
                 1 ETH
               </Text>
               <Stack pb={8} pt={4} px={8}>
@@ -236,7 +248,7 @@ export default function Home() {
             </Text>
             <Stack border="1px" borderColor="gray.200" borderRadius="lg">
               <Image alt="hero image" src="/images/question_mark.png" />
-              <Text pt={4} fontSize="20px" alignSelf="center">
+              <Text pt={4} fontSize="1.5rem" alignSelf="center">
                 5 ETH
               </Text>
               <Stack pb={8} pt={4} px={8}>
@@ -486,6 +498,227 @@ export default function Home() {
           </Container>
         </Stack>
 
+        <Stack
+          px={{ base: 4, md: 0, lg: 0 }}
+          spacing={{ lg: 10, base: 3, md: 10 }}
+        >
+          <Stack
+            spacing={{ lg: 6, base: 3, md: 6 }}
+            alignItems={{ base: "none", md: "center", lg: "center" }}
+          >
+            <Heading>Behind The Scenes</Heading>
+            <Text>
+              Easy Money is a collaborative work by Nigerian creatives.
+            </Text>
+          </Stack>
+          <Wrap
+            justify="center"
+            spacing={{ lg: 16, md: 16, base: 10 }}
+            // columns={{ lg: 3, base: 1, md: 3 }}
+            // rows={{ lg: 2, base: "none", md: "none" }}
+          >
+            <Stack
+              width={{ lg: "26%", base: "80%" }}
+              spacing={0}
+              color="#000000"
+              border="2px"
+              borderColor="#ffffff"
+              borderRadius="1.5rem"
+              // box-shadow="4px 5px 10px rgba(255, 255, 255, 0.25)"
+            >
+              <Image alt="hero image" src="/images/Lenny.png" />
+              <Stack
+                height="100%"
+                bgColor="#D0B396"
+                borderBottomRadius="1.4rem"
+                spacing={{ md: 0, base: 0, lg: 0 }}
+                pb={8}
+                pt={4}
+                px={8}
+              >
+                <Text
+                  fontWeight={600}
+                  fontSize={{ lg: "19px", md: "19px", base: "17px" }}
+                >
+                  Lenny Johnson
+                </Text>
+                <Text
+                  fontWeight={600}
+                  fontSize={{ lg: "19px", md: "19px", base: "17px" }}
+                >
+                  Writer and Director
+                </Text>
+                <Stack pt={6}>
+                  <Text
+                    fontWeight={400}
+                    fontSize={{ lg: "18px", md: "18px", base: "16px" }}
+                  >
+                    From Startups to DAOs to music & films.
+                  </Text>
+                  <Text
+                    fontWeight={400}
+                    fontSize={{ lg: "18px", md: "18px", base: "16px" }}
+                  >
+                    Lenny brings his multidisciplinary approach to the world of
+                    film making.
+                  </Text>
+                </Stack>
+              </Stack>
+            </Stack>
+
+            <Stack
+              width={{ lg: "26%", base: "80%" }}
+              spacing={0}
+              color="#000000"
+              border="2px"
+              borderColor="#ffffff"
+              borderRadius={{ base: "1.6rem", md: "1.6rem", lg: "2rem" }}
+            >
+              <Image
+                // borderRadius="inherit"
+                alt="hero image"
+                src="/images/Monak.png"
+              />
+              <Stack
+                height="100%"
+                bgColor="#D0B396"
+                borderBottomRadius={{
+                  base: "1.5rem",
+                  md: "1.5rem",
+                  lg: "1.9rem",
+                }}
+                spacing={{ md: 0, base: 0, lg: 0 }}
+                pb={8}
+                pt={4}
+                px={8}
+              >
+                <Text
+                  fontWeight={600}
+                  fontSize={{ lg: "19px", md: "19px", base: "17px" }}
+                >
+                  Monak
+                </Text>
+                <Text
+                  fontWeight={600}
+                  fontSize={{ lg: "19px", md: "19px", base: "17px" }}
+                >
+                  Actor & Composer
+                </Text>
+                <Stack pt={6}>
+                  <Text
+                    fontWeight={400}
+                    fontSize={{ lg: "18px", md: "18px", base: "16px" }}
+                  >
+                    Monak is a Lagos based artist and producer who does
+                    everything his own way.
+                  </Text>
+                  <Text
+                    fontWeight={400}
+                    fontSize={{ lg: "18px", md: "18px", base: "16px" }}
+                  >
+                    {`When not making beats, he's leveraging his acting talents.`}
+                  </Text>
+                </Stack>
+              </Stack>
+            </Stack>
+
+            <Stack
+              width={{ lg: "26%", base: "80%" }}
+              spacing={0}
+              color="#000000"
+              border="2px"
+              borderColor="#ffffff"
+              borderRadius="37px"
+            >
+              <Image alt="hero image" src="/images/Versaphile.png" />
+              <Stack
+                height="100%"
+                bgColor="#D0B396"
+                borderBottomRadius="35px"
+                spacing={{ md: 0, base: 0, lg: 0 }}
+                pb={8}
+                pt={4}
+                px={8}
+              >
+                <Text
+                  fontWeight={600}
+                  fontSize={{ lg: "19px", md: "19px", base: "17px" }}
+                >
+                  Versaphile
+                </Text>
+                <Text
+                  fontWeight={600}
+                  fontSize={{ lg: "19px", md: "19px", base: "17px" }}
+                >
+                  Digital Artist
+                </Text>
+                <Stack pt={6}>
+                  <Text
+                    fontWeight={400}
+                    fontSize={{ lg: "18px", md: "18px", base: "16px" }}
+                  >
+                    Versaphile brings his intricate world building powers to the
+                    Easy Money NFT collection.
+                  </Text>
+                  <Text
+                    fontWeight={400}
+                    fontSize={{ lg: "18px", md: "18px", base: "16px" }}
+                  >
+                    Marvel at their splendor.
+                  </Text>
+                </Stack>
+              </Stack>
+            </Stack>
+
+            <Stack
+              width={{ lg: "26%", base: "80%" }}
+              spacing={0}
+              color="#000000"
+              border="2px"
+              borderColor="#ffffff"
+              borderRadius={{ lg: "37px", base: "2rem" }}
+            >
+              <Image
+                // width="intrinsic"
+                alt="hero image"
+                src="/images/Kome.png"
+                // borderTopRadius="4px"
+              />
+              <Stack
+                height="100%"
+                bgColor="#D0B396"
+                borderBottomRadius="35px"
+                spacing={{ md: 0, base: 0, lg: 0 }}
+                pb={8}
+                pt={4}
+                px={8}
+              >
+                <Text
+                  fontWeight={600}
+                  fontSize={{ lg: "19px", md: "19px", base: "17px" }}
+                >
+                  Marvin Kome
+                </Text>
+                <Text
+                  fontWeight={600}
+                  fontSize={{ lg: "19px", md: "19px", base: "17px" }}
+                >
+                  Engineering
+                </Text>
+                <Stack pt={6}>
+                  <Text
+                    fontWeight={400}
+                    fontSize={{ lg: "18px", md: "18px", base: "16px" }}
+                  >
+                    Marvin is in charge of building the technical infrastructure
+                    that makes this movie possible.
+                  </Text>
+                </Stack>
+              </Stack>
+            </Stack>
+          </Wrap>
+        </Stack>
+
         <Container py={10} maxW="3xl">
           <Heading pb={2} textAlign="center">
             FAQs
@@ -662,6 +895,17 @@ export default function Home() {
           </Accordion>
         </Container>
 
+        <Stack alignItems="center">
+          <Button
+            width="13rem"
+            rounded="full"
+            bgColor="#2079FF"
+            leftIcon={<BsTwitter />}
+          >
+            Share on Twitter
+          </Button>
+        </Stack>
+
         <Stack
           alignItems="center"
           py={{ lg: 8, md: 8, base: 4 }}
@@ -672,11 +916,17 @@ export default function Home() {
             fontWeight={400}
             fontSize={{ base: "2rem", md: "3rem", lg: "3rem" }}
           >
-            Connect With US
+            Join the mailing list
           </Heading>
           <Text fontSize={{ lg: "18px", md: "18px", base: "14px" }}>
             Keep up with all the Easy Money updates
           </Text>
+          <Stack direction="row" border="2px" borderRadius="full">
+            <Input focusBorderColor="none" border="none" />
+            <Button bgColor="white" color="black" borderRadius="full">
+              JOIN
+            </Button>
+          </Stack>
           <Stack
             py={4}
             alignSelf="center"
