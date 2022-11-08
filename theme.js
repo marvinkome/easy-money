@@ -9,7 +9,7 @@ const theme = extendTheme({
 
   fonts: {
     body: "'Inter', sans-serif",
-    heading: "'Boogaloo', cursive",
+    heading: "'Boogaloo', sans-serif",
   },
 
   styles: {
