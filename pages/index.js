@@ -74,6 +74,9 @@ export default function Home() {
 
               <chakra.div textAlign={{ base: "center", md: "unset" }}>
                 <Button
+                  as="a"
+                  href="https://discord.com/invite/8Vt2bhmPvZ"
+                  target="_blank"
                   _active={{ opacity: 0.8 }}
                   _hover={{ opacity: 0.8 }}
                   color="black"
@@ -377,6 +380,9 @@ export default function Home() {
             </Text>
 
             <Button
+              as="a"
+              href="https://discord.com/invite/8Vt2bhmPvZ"
+              target="_blank"
               mt={6}
               _active={{ opacity: 0.8 }}
               _hover={{ opacity: 0.8 }}
@@ -876,6 +882,9 @@ export default function Home() {
 
           <chakra.div mt={16} textAlign="center">
             <Button
+              as="a"
+              target="_blank"
+              href="https://twitter.com/easymoneymovie"
               width="13rem"
               rounded="full"
               colorScheme="twitter"
@@ -893,29 +902,13 @@ export default function Home() {
               fontWeight={400}
               fontSize={{ base: "2rem", md: "3rem", lg: "3rem" }}
             >
-              Join the mailing list
+              Connect With US
             </Heading>
 
             <Text mt={4}>Keep up with all the Easy Money updates</Text>
           </chakra.header>
 
-          <Stack mt={{ base: 6, md: 8 }} textAlign="center" maxW="md" mx="auto">
-            <Stack direction="row" border="2px" borderRadius="full">
-              <Input focusBorderColor="none" border="none" />
-              <Button
-                _active={{ opacity: 0.8 }}
-                _hover={{ opacity: 0.8 }}
-                color="black"
-                bgColor="#D9D9D9"
-                px={8}
-                rounded="full"
-              >
-                JOIN
-              </Button>
-            </Stack>
-          </Stack>
-
-          <Stack mt={12} direction="row" justifyContent="center" spacing={4}>
+          <Stack mt={6} direction="row" justifyContent="center" spacing={4}>
             <IconButton
               rounded="full"
               size="lg"
