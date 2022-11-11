@@ -4,13 +4,13 @@ import {
   chakra,
   Container,
   Heading,
+  Link,
   Text,
   Stack,
   Button,
   Image,
   Icon,
   IconButton,
-  Input,
   Center,
   Wrap,
 } from "@chakra-ui/react";
@@ -102,6 +102,7 @@ export default function Home() {
           </chakra.header>
 
           <Stack
+            justify="center"
             direction={{ base: "column", md: "row" }}
             mt={{ base: 14, md: 16 }}
             px={{ base: 4, md: 0 }}
@@ -461,12 +462,14 @@ export default function Home() {
           </chakra.header>
 
           <Wrap mt={{ base: 14, md: 16 }} justify="center" spacing={{ md: 16, base: 10 }} px={{ base: 4, md: 0 }}>
-            <Stack w="xs" color="#000000" border="2px" borderColor="#fff" borderRadius="25px" overflow="hidden">
+            <Stack w="xs" color="#000" border="2px" borderColor="#fff" borderRadius="25px" overflow="hidden">
               <Image alt="A picture of Lenny" src="/images/Lenny.png" />
 
               <Stack h="full" bgColor="#D0B396" py={4} px={8}>
                 <Text fontWeight="500">
-                  Lenny Johnson <br />
+                  <Link display="block" href="https://twitter.com/TheLennyJohnson" target="_blank" textDecoration="underline">
+                    Lenny Johnson
+                  </Link>
                   Writer and Director
                 </Text>
 
@@ -482,7 +485,14 @@ export default function Home() {
 
               <Stack h="full" bgColor="#D0B396" py={4} px={8}>
                 <Text fontWeight="500">
-                  Monak <br />
+                  <Link
+                    display="block"
+                    href="https://open.spotify.com/artist/7d8xWmjn4YwNJ9ei4sWmJP"
+                    target="_blank"
+                    textDecoration="underline"
+                  >
+                    Monak
+                  </Link>
                   Actor & Composer
                 </Text>
 
@@ -499,7 +509,9 @@ export default function Home() {
 
               <Stack h="full" bgColor="#D0B396" py={4} px={8}>
                 <Text fontWeight="500">
-                  Versaphile <br />
+                  <Link display="block" href="https://www.instagram.com/versaphile/" target="_blank" textDecoration="underline">
+                    Versaphile
+                  </Link>
                   Digital Artist
                 </Text>
 
@@ -516,7 +528,9 @@ export default function Home() {
 
               <Stack h="full" bgColor="#D0B396" py={4} px={8}>
                 <Text fontWeight="500">
-                  Marvin Kome <br />
+                  <Link display="block" href="https://twitter.com/marvin_kome" target="_blank" textDecoration="underline">
+                    Marvin Kome
+                  </Link>
                   Engineering
                 </Text>
 
