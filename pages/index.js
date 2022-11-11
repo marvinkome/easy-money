@@ -560,9 +560,9 @@ export default function Home() {
               </Stack>
 
               <Text px={4}>
-                Easy money is the first African film funded completely with NFTs. We using this new wave of technology to build on the
+                {`Easy money is the first African film funded completely with NFTs. We're using this new wave of technology to build on the
                 momentum of independent filmmaking. Setting an example for filmmakers in the African/Global film space. Holding an Easy
-                Money NFT is holding a piece of history and a chance to be part of the new filmmaking revolution.
+                Money NFT is holding a piece of history and a chance to be part of the new filmmaking revolution.`}
               </Text>
             </Stack>
 
