@@ -24,7 +24,10 @@ export default function Home() {
     <>
       <Head>
         <title>Easy Money</title>
-        <meta name="description" content="Some description" />
+        <meta
+          name="description"
+          content="A desperate man attempts a robbery with an old friend. Everything goes wrong. Be part of the first African movie funded with NFTS."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
