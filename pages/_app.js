@@ -1,5 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "theme";
+import { useEffect } from "react";
+
 import { useRouter } from "next/router";
 import ReactGA from "react-ga4";
 
