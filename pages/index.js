@@ -341,7 +341,7 @@ export default function Home() {
                   <Stack direction="row" alignItems="center">
                     <Icon as={BsStarFill} color="#000" boxSize={3} />
                     <Text fontSize="sm">
-                      Get 1 of 5 physical memrobilia from the film
+                      Get 1 of 5 physical memorabilia from the film
                     </Text>
                   </Stack>
 
