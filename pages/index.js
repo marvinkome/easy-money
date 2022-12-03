@@ -321,11 +321,6 @@ export default function Home() {
                     <Icon as={BsStarFill} color="#000" boxSize={3} />
                     <Text fontSize="sm">An invite to festival screenings</Text>
                   </Stack>
-
-                  <Stack direction="row" alignItems="center">
-                    <Icon as={BsStarFill} color="#000" boxSize={3} />
-                    <Text fontSize="sm">Director will come to your hometown for a screening of the film for you.</Text>
-                  </Stack>
                 </Stack>
               </chakra.div>
 
